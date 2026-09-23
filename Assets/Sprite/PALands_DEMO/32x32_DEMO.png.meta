@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: a9459cdb84a4de2488bb8399477ce845
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7536144579712390363
+    second: 32x32_DEMO_0
+  - first:
+      213: -6061408265388554069
+    second: 32x32_DEMO_1
+  - first:
+      213: 34321456195831975
+    second: 32x32_DEMO_2
+  - first:
+      213: 3612294346470217284
+    second: 32x32_DEMO_3
+  - first:
+      213: -1410322107002803112
+    second: 32x32_DEMO_4
+  - first:
+      213: 1177598357804621254
+    second: 32x32_DEMO_5
+  - first:
+      213: 7451153180049247332
+    second: 32x32_DEMO_6
+  - first:
+      213: -3898280034134635044
+    second: 32x32_DEMO_7
+  - first:
+      213: -6367732558861517277
+    second: 32x32_DEMO_8
+  - first:
+      213: 6477789600283283123
+    second: 32x32_DEMO_9
+  - first:
+      213: -1592381665709020916
+    second: 32x32_DEMO_10
+  - first:
+      213: 1588323755682986048
+    second: 32x32_DEMO_11
+  - first:
+      213: 2574453735600737246
+    second: 32x32_DEMO_12
+  - first:
+      213: -3697674668470680909
+    second: 32x32_DEMO_13
+  - first:
+      213: -7103856374250543802
+    second: 32x32_DEMO_14
+  - first:
+      213: 4823458068260133549
+    second: 32x32_DEMO_15
+  - first:
+      213: -631623986163034132
+    second: 32x32_DEMO_16
+  - first:
+      213: -7395337767647043324
+    second: 32x32_DEMO_17
+  - first:
+      213: 1136946092575446316
+    second: 32x32_DEMO_18
+  - first:
+      213: -3124356184181141889
+    second: 32x32_DEMO_19
+  - first:
+      213: -6579739986359412601
+    second: 32x32_DEMO_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 32x32_DEMO_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 865
+        height: 813
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52be146de6c3a6790800000000000000
+      internalID: -7536144579712390363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_DEMO_1
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 639
+        width: 226
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba806ee1c4d81eba0800000000000000
+      internalID: -6061408265388554069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_DEMO_2
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 569
+        width: 48
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a80abcbe2fe97000800000000000000
+      internalID: 34321456195831975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_DEMO_3
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 561
+        width: 218
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4465281c192712230800000000000000
+      internalID: 3612294346470217284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_DEMO_4
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 569
+        width: 44
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85ca73114878d6ce0800000000000000
+      internalID: -1410322107002803112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_DEMO_5
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 543
+        width: 34
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cd170d977ba75010800000000000000
+      internalID: 1177598357804621254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_DEMO_6
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 687
+        width: 194
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46c8bdfd650d76760800000000000000
+      internalID: 7451153180049247332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_DEMO_7
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 383
+        width: 382
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdd486286f686e9c0800000000000000
+      internalID: -3898280034134635044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_DEMO_8
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 543
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32ebe54b9f441a7a0800000000000000
+      internalID: -6367732558861517277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_DEMO_9
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 543
+        width: 26
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3beca96125bb5e950800000000000000
+      internalID: 6477789600283283123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_DEMO_10
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 543
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c09a194df49b6e9e0800000000000000
+      internalID: -1592381665709020916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_DEMO_11
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 383
+        width: 125
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0487ccd5a0cda0610800000000000000
+      internalID: 1588323755682986048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_DEMO_12
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 273
+        width: 256
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edbc821580c4ab320800000000000000
+      internalID: 2574453735600737246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_DEMO_13
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 333
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b248daea783facc0800000000000000
+      internalID: -3697674668470680909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_DEMO_14
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 31
+        width: 236
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 645e665f3480a6d90800000000000000
+      internalID: -7103856374250543802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_DEMO_15
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 255
+        width: 66
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa13abae8d50f240800000000000000
+      internalID: 4823458068260133549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_DEMO_16
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 197
+        width: 62
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce7d221c4550c37f0800000000000000
+      internalID: -631623986163034132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_DEMO_17
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 135
+        width: 62
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4012e558b7b7e5990800000000000000
+      internalID: -7395337767647043324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_DEMO_18
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 113
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c255ab8827e37cf00800000000000000
+      internalID: 1136946092575446316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_DEMO_19
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 41
+        width: 62
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7e8612aa9e04a4d0800000000000000
+      internalID: -3124356184181141889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32_DEMO_20
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 49
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7881d96e75110b4a0800000000000000
+      internalID: -6579739986359412601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      32x32_DEMO_0: -7536144579712390363
+      32x32_DEMO_1: -6061408265388554069
+      32x32_DEMO_10: -1592381665709020916
+      32x32_DEMO_11: 1588323755682986048
+      32x32_DEMO_12: 2574453735600737246
+      32x32_DEMO_13: -3697674668470680909
+      32x32_DEMO_14: -7103856374250543802
+      32x32_DEMO_15: 4823458068260133549
+      32x32_DEMO_16: -631623986163034132
+      32x32_DEMO_17: -7395337767647043324
+      32x32_DEMO_18: 1136946092575446316
+      32x32_DEMO_19: -3124356184181141889
+      32x32_DEMO_2: 34321456195831975
+      32x32_DEMO_20: -6579739986359412601
+      32x32_DEMO_3: 3612294346470217284
+      32x32_DEMO_4: -1410322107002803112
+      32x32_DEMO_5: 1177598357804621254
+      32x32_DEMO_6: 7451153180049247332
+      32x32_DEMO_7: -3898280034134635044
+      32x32_DEMO_8: -6367732558861517277
+      32x32_DEMO_9: 6477789600283283123
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
