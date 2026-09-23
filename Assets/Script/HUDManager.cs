@@ -3,7 +3,7 @@ using TMPro;
 
 public class HUDManager : MonoBehaviour
 {
-    public TextMeshProUGUI textMun;
+    [SerializeField] private TextMeshProUGUI textMun;
 
     public void updateMunText(int newNb)
     {
