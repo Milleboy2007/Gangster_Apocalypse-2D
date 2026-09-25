@@ -102,5 +102,6 @@ public class MovePlayer : MonoBehaviour
         direction = Vector2.zero;
         corps.linearVelocity = Vector2.zero;
         animator.SetBool("EnMouvement", false);
+        animator.SetFloat("Vitesse", 0);
     }
 }

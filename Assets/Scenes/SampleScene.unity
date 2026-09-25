@@ -427,6 +427,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -552,6 +553,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65ca909ac8659fe4eaa32e38917b7999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  player: {fileID: 1812312810}
+  smoothSpeed: 5
+  yOffset: 1.5
 --- !u!1 &599924263
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,6 +1429,7 @@ GameObject:
   - component: {fileID: 1523935349}
   - component: {fileID: 1523935348}
   - component: {fileID: 1523935351}
+  - component: {fileID: 1523935352}
   m_Layer: 0
   m_Name: Ennemie
   m_TagString: Untagged
@@ -1441,7 +1458,7 @@ MonoBehaviour:
   joueur: {fileID: 1812312810}
   rayonDetection: 3.5
   vitessePoursuite: 2.8
-  pointDepartJoueur: {fileID: 51726603}
+  pointDepartJoueur: {fileID: 0}
   delaiEntreDegats: 1.2
 --- !u!212 &1523935349
 SpriteRenderer:
@@ -1543,6 +1560,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &1523935352
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523935347}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ffd8d1ea071dd3845a0a517e1ad2492d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1812312805
 GameObject:
   m_ObjectHideFlags: 0
@@ -1761,61 +1800,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HUDManager
   textMun: {fileID: 1202922219}
---- !u!1 &1849548543
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1849548545}
-  - component: {fileID: 1849548544}
-  m_Layer: 0
-  m_Name: GestionJeu
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1849548544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1849548543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd5ec0cbcae43db42bfd9a7c3ee7ee94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  objectifBatteries: 3
-  viesInitiales: 3
-  texteBatteries: {fileID: 0}
-  texteVies: {fileID: 0}
-  barreProgression: {fileID: 0}
-  panneauVictoire: {fileID: 0}
-  panneauDefaite: {fileID: 0}
-  porteSortie: {fileID: 0}
-  joueur: {fileID: 0}
-  audioJeu: {fileID: 0}
-  effetDegatsJoueur: {fileID: 0}
---- !u!4 &1849548545
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1849548543}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.15583, y: 0.98936, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2016162400
 GameObject:
   m_ObjectHideFlags: 0
@@ -1970,4 +1954,3 @@ SceneRoots:
   - {fileID: 1523935350}
   - {fileID: 730575003}
   - {fileID: 1280609674}
-  - {fileID: 1849548545}

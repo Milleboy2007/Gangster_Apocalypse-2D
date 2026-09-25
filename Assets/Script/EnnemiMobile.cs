@@ -106,11 +106,11 @@ public class EnnemiMobile : MonoBehaviour
     {
         // Si le gestionnaire existe et que la partie est terminée,
         // arrête le déplacement et quitte la méthode.
-        if (GestionJeu.Instance != null && GestionJeu.Instance.PartieTerminee)
-        {
-            corps.linearVelocity = Vector2.zero;
-            return;
-        }
+        // if (GestionJeu.Instance != null && GestionJeu.Instance.PartieTerminee)
+        // {
+        //     corps.linearVelocity = Vector2.zero;
+        //     return;
+        // }
 
         // Le joueur est détecté si sa référence existe ET
         // si sa distance à l'ennemi ne dépasse pas le rayon de détection.
@@ -135,8 +135,7 @@ public class EnnemiMobile : MonoBehaviour
         // normalized conserve la direction avec une longueur de 1
         // si le vecteur n'est pas nul : la vitesse ne dépend donc
         // pas de la distance au joueur.
-        Vector2 direction =
-            ((Vector2)joueur.position - corps.position).normalized;
+        Vector2 direction = ((Vector2)joueur.position - corps.position).normalized;
 
         AppliquerVitesse(direction, vitessePoursuite);
     }
@@ -224,7 +223,7 @@ public class EnnemiMobile : MonoBehaviour
         //     Camera.main.GetComponent<SecousseCamera>()?.Declencher();
 
         // Demande au gestionnaire de retirer une vie.
-        GestionJeu.Instance?.PerdreVie();
+        //GestionJeu.Instance?.PerdreVie();
 
         // Si un point de retour est configuré, y replace le joueur.
         if (pointDepartJoueur != null)
