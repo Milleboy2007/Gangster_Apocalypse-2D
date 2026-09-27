@@ -57,6 +57,7 @@ public class EnnemiMobile : MonoBehaviour
     [SerializeField, Min(0.1f)]
     private float vitessePoursuite = 2.8f;
 
+
     [Header("Impact")]
 
     // Temps minimal entre deux applications de dégâts par cet ennemi.
@@ -64,6 +65,12 @@ public class EnnemiMobile : MonoBehaviour
     private float delaiEntreDegats = 1.2f;
     [SerializeField]
     private int damageToGive;
+    [SerializeField, Min(0.1f)]
+    private float attackRange = 1.0f;
+    
+    [Header("Correctif")]
+    [SerializeField] 
+    private Vector2 rangeGap = new Vector2(0f, 0.5f);
 
     // Références aux composants de l'ennemi.
     private Rigidbody2D corps;
@@ -108,6 +115,7 @@ public class EnnemiMobile : MonoBehaviour
     // Appelée à intervalles fixes pour gérer la physique.
     private void FixedUpdate()
     {
+        Vector2 centreEnnemi = corps.position + rangeGap;
         bool joueurDetecte = joueur != null && Vector2.Distance(corps.position, joueur.position) <= rayonDetection;
 
         // Si le joueur vient tout juste d'échapper à la détection (il était là, mais ne l'est plus)
@@ -126,7 +134,15 @@ public class EnnemiMobile : MonoBehaviour
         else
         {
             if (joueurDetecte)
-                PoursuivreJoueur();
+            {
+                float distanceWithPlayer = Vector2.Distance(centreEnnemi, joueur.position);
+
+                if(distanceWithPlayer <= attackRange)
+                {
+                    AppliquerVitesse(Vector2.zero, 0f);
+                    AttackPlayer();
+                }else PoursuivreJoueur();
+            }
             else if (typeDeplacement == TypeDeplacement.Sinusoidal)
                 DeplacementSinusoidal();
             else
@@ -225,32 +241,39 @@ public class EnnemiMobile : MonoBehaviour
     }
 
     // Appelée pendant que l'autre Collider2D reste dans la zone Trigger.
-    private void OnTriggerStay2D(Collider2D autre)
+    private void AttackPlayer()
     {
-        // Ignore le contact si :
-        // - l'objet n'a pas le tag Player;
-        // - OU le délai entre deux dégâts n'est pas encore écoulé.
-        if (!autre.CompareTag("Player") || Time.time < prochainDegat) return;
+        // Ignore si :
+        // - le délai entre deux dégâts n'est pas encore écoulé.
+        if (Time.time < prochainDegat) return;
 
         // Programme le prochain instant où les dégâts seront autorisés.
         prochainDegat = Time.time + delaiEntreDegats;
 
         // Lance l'effet visuel de l'ennemi si la référence n'est pas null.
-        animator.SetTrigger("Attack");
+        if(animator != null) animator.SetTrigger("Attack");
 
+        Vector2 direction = ((Vector2)joueur.position - corps.position).normalized;
+        if (Mathf.Abs(direction.x) > 0.05f)
+            rendu.flipX = direction.x < 0f;
 
         // Faire perdre de la vie
-        autre.GetComponent<PlayerHealth>().TakeDamage(damageToGive);
+        joueur.GetComponent<PlayerHealth>().TakeDamage(damageToGive);
 
     }
 
     // Dessine des repères dans la vue Scene lorsque l'objet est sélectionné.
     private void OnDrawGizmosSelected()
     {
+        Vector2 centreVisuel = (Vector2)transform.position + rangeGap;
         Gizmos.color = Color.yellow;
 
         // Visualise le rayon de détection du joueur.
-        Gizmos.DrawWireSphere(transform.position, rayonDetection);
+        Gizmos.DrawWireSphere(centreVisuel, rayonDetection);
+
+        // Visualise le rayon d'attaque
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(centreVisuel, attackRange);
 
         // Visualise le segment entre les deux points de patrouille.
         if (pointA != null && pointB != null)
