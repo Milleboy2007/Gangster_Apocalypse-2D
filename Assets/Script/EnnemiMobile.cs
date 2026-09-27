@@ -38,6 +38,12 @@ public class EnnemiMobile : MonoBehaviour
     [SerializeField, Min(0.1f)]
     private float frequenceVague = 1.4f;
 
+    [Header("Attente (Pauses)")]
+    [SerializeField, Min(0f)] 
+    private float tempsAttentePatrouille = 1.5f; // Temps d'arrêt aux points A et B
+    [SerializeField, Min(0f)] 
+    private float tempsAttentePerteJoueur = 2.0f; // Temps d'arrêt quand le joueur s'échappe
+
     [Header("Poursuite")]
 
     // Position du joueur à suivre.
@@ -53,12 +59,11 @@ public class EnnemiMobile : MonoBehaviour
 
     [Header("Impact")]
 
-    // Position où replacer le joueur après un contact.
-    [SerializeField] private Transform pointDepartJoueur;
-
     // Temps minimal entre deux applications de dégâts par cet ennemi.
     [SerializeField, Min(0.1f)]
     private float delaiEntreDegats = 1.2f;
+    [SerializeField]
+    private int damageToGive;
 
     // Références aux composants de l'ennemi.
     private Rigidbody2D corps;
@@ -72,9 +77,11 @@ public class EnnemiMobile : MonoBehaviour
 
     // Compteur utilisé pour calculer le mouvement ondulé.
     private float progressionVague;
+    private int phasePrecedente = 0;
+    private Animator animator;
 
-    // Effet visuel d'attaque, s'il existe sur cet objet.
-    private EffetAttaqueEnnemi effetAttaque;
+    private float tempsAttenteRestant;
+    private bool joueurPrecedemmentDetecte;
 
     private void Awake()
     {
@@ -88,43 +95,48 @@ public class EnnemiMobile : MonoBehaviour
         // Empêche les interactions physiques de le faire tourner.
         corps.freezeRotation = true;
 
-        // Ce composant est facultatif : GetComponent retourne null
-        // s'il n'est pas présent.
-        effetAttaque = GetComponent<EffetAttaqueEnnemi>();
     }
 
     private void Start()
     {
         // Choisit B comme première destination si B est assigné.
         // Sinon, utilise A.
-        // Syntaxe ternaire : condition ? valeurSiVrai : valeurSiFaux.
         ciblePatrouille = pointB != null ? pointB : pointA;
+        animator = GetComponent<Animator>();
     }
 
     // Appelée à intervalles fixes pour gérer la physique.
     private void FixedUpdate()
     {
-        // Si le gestionnaire existe et que la partie est terminée,
-        // arrête le déplacement et quitte la méthode.
-        // if (GestionJeu.Instance != null && GestionJeu.Instance.PartieTerminee)
-        // {
-        //     corps.linearVelocity = Vector2.zero;
-        //     return;
-        // }
+        bool joueurDetecte = joueur != null && Vector2.Distance(corps.position, joueur.position) <= rayonDetection;
 
-        // Le joueur est détecté si sa référence existe ET
-        // si sa distance à l'ennemi ne dépasse pas le rayon de détection.
-        // && évite d'évaluer joueur.position si joueur est null.
-        bool joueurDetecte = joueur != null &&
-            Vector2.Distance(corps.position, joueur.position) <= rayonDetection;
+        // Si le joueur vient tout juste d'échapper à la détection (il était là, mais ne l'est plus)
+        if (!joueurDetecte && joueurPrecedemmentDetecte)
+        {
+            tempsAttenteRestant = tempsAttentePerteJoueur; // L'ennemi s'arrête et cherche
+        }
+        joueurPrecedemmentDetecte = joueurDetecte;
 
-        // La poursuite est prioritaire sur les autres déplacements.
-        if (joueurDetecte)
-            PoursuivreJoueur();
-        else if (typeDeplacement == TypeDeplacement.Sinusoidal)
-            DeplacementSinusoidal();
+        // Gestion du chronomètre d'attente
+        if (tempsAttenteRestant > 0f)
+        {
+            tempsAttenteRestant -= Time.fixedDeltaTime;
+            AppliquerVitesse(Vector2.zero, 0f); // Force l'arrêt complet
+        }
         else
-            DeplacementPatrouille();
+        {
+            if (joueurDetecte)
+                PoursuivreJoueur();
+            else if (typeDeplacement == TypeDeplacement.Sinusoidal)
+                DeplacementSinusoidal();
+            else
+                DeplacementPatrouille();
+        }
+
+
+        bool estEnMouvement = corps.linearVelocity.sqrMagnitude > 0.01f;
+        
+        if (animator != null) animator.SetBool("EnMouvement", estEnMouvement);
     }
 
     private void PoursuivreJoueur()
@@ -154,37 +166,46 @@ public class EnnemiMobile : MonoBehaviour
         // Quand l'ennemi arrive près de sa destination,
         // change de point cible pour effectuer un aller-retour.
         if (Vector2.Distance(corps.position, ciblePatrouille.position) < 0.2f)
-            ciblePatrouille = ciblePatrouille == pointA ? pointB : pointA;
+        {
+                ciblePatrouille = ciblePatrouille == pointA ? pointB : pointA;
+                tempsAttenteRestant = tempsAttentePatrouille;
+        }
     }
 
     private void DeplacementSinusoidal()
     {
-        // Ce mode nécessite les deux points.
         if (pointA == null || pointB == null) return;
 
-        // Fait progresser la phase de l'animation à chaque pas physique.
-        progressionVague += Time.fixedDeltaTime * frequenceVague;
+        // 1. Synchronisation parfaite : on calcule le % du trajet parcouru par seconde
+        float distanceTotale = Vector2.Distance(pointA.position, pointB.position);
+        float vitessePourcentage = vitessePatrouille / distanceTotale;
 
-        // Produit une valeur qui monte de 0 à 1, puis redescend à 0.
+        // La cible fantôme avance au rythme exact de l'ennemie
+        progressionVague += Time.fixedDeltaTime * vitessePourcentage;
+
+        int phaseActuelle = Mathf.FloorToInt(progressionVague);
+        
+        // 2. Pause précise aux extrémités
+        if (phaseActuelle > phasePrecedente)
+        {
+            progressionVague = phaseActuelle; // On recadre parfaitement sur le point A ou B
+            phasePrecedente = phaseActuelle;
+            tempsAttenteRestant = tempsAttentePatrouille; // L'ennemie prend sa pause
+            return; 
+        }
+
+        // 3. Calcul du tracé (allerRetour oscille doucement entre 0 et 1)
         float allerRetour = Mathf.PingPong(progressionVague, 1f);
+        Vector2 baseTrajet = Vector2.Lerp(pointA.position, pointB.position, allerRetour);
+        
+        // On applique les zigzags par-dessus ce tracé
+        Vector2 cibleVague = baseTrajet + Vector2.up * 
+            (Mathf.Sin(allerRetour * Mathf.PI * 2f * frequenceVague) * hauteurVague);
 
-        // Calcule une position intermédiaire entre A et B :
-        // 0 = A, 0.5 = milieu, 1 = B.
-        Vector2 baseTrajet =
-            Vector2.Lerp(pointA.position, pointB.position, allerRetour);
-
-        // Sin produit une oscillation entre -1 et 1.
-        // Multiplier par hauteurVague règle son amplitude.
-        // Vector2.up applique ce décalage sur l'axe vertical.
-        Vector2 cibleVague = baseTrajet + Vector2.up *
-            (Mathf.Sin(progressionVague * Mathf.PI * 2f) * hauteurVague);
-
-        // L'ennemi se dirige vers cette cible mobile.
-        // Il n'est pas placé directement sur la courbe.
+        // 4. Déplacement physique
         Vector2 direction = (cibleVague - corps.position).normalized;
-
-        // Utilise une vitesse supérieure de 15 % à celle de la patrouille.
-        AppliquerVitesse(direction, vitessePatrouille * 1.15f);
+        // On donne un petit boost (+25%) pour que l'ennemie reste toujours bien collé à la courbe
+        AppliquerVitesse(direction, vitessePatrouille * 1.25f);
     }
 
     // Centralise le déplacement et l'orientation visuelle.
@@ -195,8 +216,8 @@ public class EnnemiMobile : MonoBehaviour
         // le moteur physique se charge de faire évoluer la position.
         corps.linearVelocity = direction * vitesse;
 
-        // Ne change l'orientation que si le déplacement horizontal
-        // est suffisamment marqué, pour éviter des retournements inutiles.
+        // // Ne change l'orientation que si le déplacement horizontal
+        // // est suffisamment marqué, pour éviter des retournements inutiles.
         if (Mathf.Abs(direction.x) > 0.05f)
             // Retourne le sprite horizontalement lorsque l'ennemi va à gauche.
             // Suppose que le dessin d'origine regarde vers la droite.
@@ -215,29 +236,12 @@ public class EnnemiMobile : MonoBehaviour
         prochainDegat = Time.time + delaiEntreDegats;
 
         // Lance l'effet visuel de l'ennemi si la référence n'est pas null.
-        effetAttaque?.Declencher();
+        animator.SetTrigger("Attack");
 
-        // Recherche la caméra principale, puis déclenche sa secousse
-        // si elle possède le composant SecousseCamera.
-        // if (Camera.main != null)
-        //     Camera.main.GetComponent<SecousseCamera>()?.Declencher();
 
-        // Demande au gestionnaire de retirer une vie.
-        //GestionJeu.Instance?.PerdreVie();
-        autre.GetComponent<PlayerHealth>().TakeDamage(10);
+        // Faire perdre de la vie
+        autre.GetComponent<PlayerHealth>().TakeDamage(damageToGive);
 
-        // Si un point de retour est configuré, y replace le joueur.
-        if (pointDepartJoueur != null)
-        {
-            autre.transform.position = pointDepartJoueur.position;
-
-            // Recherche le Rigidbody2D sur l'objet du collider touché.
-            Rigidbody2D corpsJoueur = autre.GetComponent<Rigidbody2D>();
-
-            // Annule sa vitesse pour supprimer l'élan après le retour.
-            if (corpsJoueur != null)
-                corpsJoueur.linearVelocity = Vector2.zero;
-        }
     }
 
     // Dessine des repères dans la vue Scene lorsque l'objet est sélectionné.
