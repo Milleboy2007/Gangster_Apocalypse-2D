@@ -44,8 +44,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-        MonoBehaviour mouvementScript = GetComponent<MovePlayer>();
-        if (mouvementScript != null) mouvementScript.enabled = false;
+        GetComponent<MovePlayer>().DesactiverCommandes();
 
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         if (rb != null)

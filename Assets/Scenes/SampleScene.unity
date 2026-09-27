@@ -2438,8 +2438,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   vitesse: 5
-  limiteMin: {x: -10, y: -6}
-  limiteMax: {x: 10, y: 6}
 --- !u!50 &1812312807
 Rigidbody2D:
   serializedVersion: 5
@@ -2633,7 +2631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 692518e1238cad143bb54481d09e3bc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  maxHealth: 10
+  maxHealth: 100
   healthBar: {fileID: 1689370157}
 --- !u!114 &1812312814
 MonoBehaviour:
