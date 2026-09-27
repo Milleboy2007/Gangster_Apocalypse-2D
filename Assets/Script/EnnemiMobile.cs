@@ -224,6 +224,7 @@ public class EnnemiMobile : MonoBehaviour
 
         // Demande au gestionnaire de retirer une vie.
         //GestionJeu.Instance?.PerdreVie();
+        autre.GetComponent<PlayerHealth>().TakeDamage(10);
 
         // Si un point de retour est configuré, y replace le joueur.
         if (pointDepartJoueur != null)

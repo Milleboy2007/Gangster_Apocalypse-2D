@@ -1,0 +1,1195 @@
+fileFormatVersion: 2
+guid: bb1ee016177c2f94bbba495a4bdb12be
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5684327315910396547
+    second: Blood_0
+  - first:
+      213: -1189345562256101844
+    second: Blood_1
+  - first:
+      213: 5722333315871558701
+    second: Blood_2
+  - first:
+      213: 3909595645733894167
+    second: Blood_3
+  - first:
+      213: -374699494892873770
+    second: Blood_4
+  - first:
+      213: 5281811327271454313
+    second: Blood_5
+  - first:
+      213: -2044344349260785571
+    second: Blood_6
+  - first:
+      213: 1295801174852132906
+    second: Blood_7
+  - first:
+      213: 1921429812043486609
+    second: Blood_8
+  - first:
+      213: 1383461657061368076
+    second: Blood_9
+  - first:
+      213: 5335947261288081930
+    second: Blood_10
+  - first:
+      213: -420561362150945321
+    second: Blood_11
+  - first:
+      213: -7858715718292287355
+    second: Blood_12
+  - first:
+      213: -1034289341275851498
+    second: Blood_13
+  - first:
+      213: 5052171841915474803
+    second: Blood_14
+  - first:
+      213: 746896397948701829
+    second: Blood_15
+  - first:
+      213: -7567482132543009634
+    second: Blood_16
+  - first:
+      213: -6743018210936478119
+    second: Blood_17
+  - first:
+      213: -3883518051959684106
+    second: Blood_18
+  - first:
+      213: 6553323263654280841
+    second: Blood_19
+  - first:
+      213: -6577351968973786745
+    second: Blood_20
+  - first:
+      213: -897078715031351629
+    second: Blood_21
+  - first:
+      213: -4572818326935346543
+    second: Blood_22
+  - first:
+      213: 8041310347366581422
+    second: Blood_23
+  - first:
+      213: -6555394148765354152
+    second: Blood_24
+  - first:
+      213: 4201216384262297053
+    second: Blood_25
+  - first:
+      213: -1076412981617156026
+    second: Blood_26
+  - first:
+      213: 1013293048883887740
+    second: Blood_27
+  - first:
+      213: -656188230328449305
+    second: Blood_28
+  - first:
+      213: 3860720148897288421
+    second: Blood_29
+  - first:
+      213: 889770481953779268
+    second: Blood_30
+  - first:
+      213: 4327907867643408495
+    second: Blood_31
+  - first:
+      213: -5470664636874853462
+    second: Blood_32
+  - first:
+      213: -7999300154375720742
+    second: Blood_33
+  - first:
+      213: 1426609218032138122
+    second: Blood_34
+  - first:
+      213: -1827875614463769959
+    second: Blood_35
+  - first:
+      213: 5596150657813055826
+    second: Blood_36
+  - first:
+      213: -568464005771191168
+    second: Blood_37
+  - first:
+      213: -4115894474923453527
+    second: Blood_38
+  - first:
+      213: 6271267269155110270
+    second: Blood_39
+  - first:
+      213: -3924809585859123549
+    second: Blood_40
+  - first:
+      213: 1702673457542605582
+    second: Blood_41
+  - first:
+      213: -981765383835898783
+    second: Blood_42
+  - first:
+      213: 8212015718710066394
+    second: Blood_43
+  - first:
+      213: -4809857469296149070
+    second: Blood_44
+  - first:
+      213: 3462105070884755277
+    second: Blood_45
+  - first:
+      213: 5078037396634909361
+    second: Blood_46
+  - first:
+      213: -772163090726090922
+    second: Blood_47
+  - first:
+      213: -321193792032334686
+    second: Blood_48
+  - first:
+      213: -2167140810385639814
+    second: Blood_49
+  - first:
+      213: -80029556159743606
+    second: Blood_50
+  - first:
+      213: 2331608019378864654
+    second: Blood_51
+  - first:
+      213: -5259561233162126685
+    second: Blood_52
+  - first:
+      213: -6820232115612183221
+    second: Blood_53
+  - first:
+      213: 8909655363935596759
+    second: Blood_54
+  - first:
+      213: -7318225467781305882
+    second: Blood_55
+  - first:
+      213: 20909568435169969
+    second: Blood_56
+  - first:
+      213: 4332411185454022142
+    second: Blood_57
+  - first:
+      213: -1609774352881513653
+    second: Blood_58
+  - first:
+      213: -5667556957461652691
+    second: Blood_59
+  - first:
+      213: -4934914382739049551
+    second: Blood_60
+  - first:
+      213: 5325196907503058520
+    second: Blood_61
+  - first:
+      213: -2232794813329106638
+    second: Blood_62
+  - first:
+      213: -1509670119697920382
+    second: Blood_63
+  - first:
+      213: 6678436843465845753
+    second: Blood_64
+  - first:
+      213: 2037108785276023403
+    second: Blood_65
+  - first:
+      213: 3458677813270018446
+    second: Blood_66
+  - first:
+      213: 3957876089737290820
+    second: Blood_67
+  - first:
+      213: -4541875297754390412
+    second: Blood_68
+  - first:
+      213: -4314122393434456151
+    second: Blood_69
+  - first:
+      213: 7998522826580467790
+    second: Blood_70
+  - first:
+      213: -2068816831125406978
+    second: Blood_71
+  - first:
+      213: -8346301681240687987
+    second: Blood_72
+  - first:
+      213: 1883953573422385426
+    second: Blood_73
+  - first:
+      213: 5339812479750220954
+    second: Blood_74
+  - first:
+      213: 6181231025136116989
+    second: Blood_75
+  - first:
+      213: -2368124528928740980
+    second: Blood_76
+  - first:
+      213: 8882841890198208021
+    second: Blood_77
+  - first:
+      213: 8542541973833101217
+    second: Blood_78
+  - first:
+      213: -8066811729831973928
+    second: Blood_79
+  - first:
+      213: -1888944180617358625
+    second: Blood_80
+  - first:
+      213: 137454048583772040
+    second: Blood_81
+  - first:
+      213: 8543978923001906203
+    second: Blood_82
+  - first:
+      213: 1693314250859650449
+    second: Blood_83
+  - first:
+      213: -7350080323659745552
+    second: Blood_84
+  - first:
+      213: -2291144762241598132
+    second: Blood_85
+  - first:
+      213: -2939213116379756715
+    second: Blood_86
+  - first:
+      213: 3324239943141268054
+    second: Blood_87
+  - first:
+      213: -5967654069106271380
+    second: Blood_88
+  - first:
+      213: -137246367196917357
+    second: Blood_89
+  - first:
+      213: 3235961598847843593
+    second: Blood_90
+  - first:
+      213: 8663134481894248683
+    second: Blood_91
+  - first:
+      213: -1220574112620303622
+    second: Blood_92
+  - first:
+      213: -2449420595754798222
+    second: Blood_93
+  - first:
+      213: 4218821257842848249
+    second: Blood_94
+  - first:
+      213: -1196785074210956363
+    second: Blood_95
+  - first:
+      213: 5305186839175089963
+    second: Blood_96
+  - first:
+      213: -5050188559943958613
+    second: Blood_97
+  - first:
+      213: -6064959916295708616
+    second: Blood_98
+  - first:
+      213: 4848351727983842156
+    second: Blood_99
+  - first:
+      213: -6726169690815751196
+    second: Blood_100
+  - first:
+      213: -3462661655722590896
+    second: Blood_101
+  - first:
+      213: 6868607192312494980
+    second: Blood_102
+  - first:
+      213: -7968361196158750357
+    second: Blood_103
+  - first:
+      213: -4271622850041724855
+    second: Blood_104
+  - first:
+      213: -4025609000203314292
+    second: Blood_105
+  - first:
+      213: -6941005482259435784
+    second: Blood_106
+  - first:
+      213: 981792666379807688
+    second: Blood_107
+  - first:
+      213: -3280986500511828272
+    second: Blood_108
+  - first:
+      213: -6228247261688281068
+    second: Blood_109
+  - first:
+      213: -58561938586290087
+    second: Blood_110
+  - first:
+      213: 3482192131796855535
+    second: Blood_111
+  - first:
+      213: -6072752656282212377
+    second: Blood_112
+  - first:
+      213: -7398297958071003779
+    second: Blood_113
+  - first:
+      213: 3591196512350498225
+    second: Blood_114
+  - first:
+      213: -3943478455500093345
+    second: Blood_115
+  - first:
+      213: 5672170291218836496
+    second: Blood_116
+  - first:
+      213: 1127660041778184613
+    second: Blood_117
+  - first:
+      213: -3026155010770608835
+    second: Blood_118
+  - first:
+      213: 4574521899599188136
+    second: Blood_119
+  - first:
+      213: 2348843342962230391
+    second: Blood_120
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blood_3
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 412
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 718f16f968ca14630800000000000000
+      internalID: 3909595645733894167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_5
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 402
+        width: 64
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96646acfa63cc4940800000000000000
+      internalID: 5281811327271454313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_7
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 396
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2068969d4c9bf110800000000000000
+      internalID: 1295801174852132906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_8
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 392
+        width: 106
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19592bfdb3a4aaa10800000000000000
+      internalID: 1921429812043486609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_10
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 390
+        width: 93
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a6b4953c71d0a40800000000000000
+      internalID: 5335947261288081930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_13
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 394
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 615b742f25775a1f0800000000000000
+      internalID: -1034289341275851498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_14
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 398
+        width: 78
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3735a9dc58bec1640800000000000000
+      internalID: 5052171841915474803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_16
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 421
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c88ad3817eaf690800000000000000
+      internalID: -7567482132543009634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_25
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 284
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd55180ea08bd4a30800000000000000
+      internalID: 4201216384262297053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_27
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 272
+        width: 102
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7eb818c8a0ff0e00800000000000000
+      internalID: 1013293048883887740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_29
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 293
+        width: 202
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e0573c3588049530800000000000000
+      internalID: 3860720148897288421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_31
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 276
+        width: 77
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f60f08f7641df0c30800000000000000
+      internalID: 4327907867643408495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_36
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 300
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2590484af5589ad40800000000000000
+      internalID: 5596150657813055826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_41
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 279
+        width: 77
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b205d0d7c11a710800000000000000
+      internalID: 1702673457542605582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_52
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 147
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aab4febce84207b0800000000000000
+      internalID: -5259561233162126685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_55
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 144
+        width: 78
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9adaee5b0707a90800000000000000
+      internalID: -7318225467781305882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_56
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 148
+        width: 70
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ba2cf644294a4000800000000000000
+      internalID: 20909568435169969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_57
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 154
+        width: 87
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd7ae1e401df1c30800000000000000
+      internalID: 4332411185454022142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_58
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 154
+        width: 168
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b86f741cee8a9e0800000000000000
+      internalID: -1609774352881513653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_81
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 25
+        width: 98
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88766ca9ab558e100800000000000000
+      internalID: 137454048583772040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_83
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 39
+        width: 87
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d989fe65cdf7710800000000000000
+      internalID: 1693314250859650449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_85
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 40
+        width: 60
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4db79d4af73430e0800000000000000
+      internalID: -2291144762241598132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_89
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 36
+        width: 68
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391d38cf727681ef0800000000000000
+      internalID: -137246367196917357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_90
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 46
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d7126ede178ec20800000000000000
+      internalID: 3235961598847843593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_104
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 37
+        width: 58
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94042d066a528b4c0800000000000000
+      internalID: -4271622850041724855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_107
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 27
+        width: 94
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cbe6a27a3700ad00800000000000000
+      internalID: 981792666379807688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_119
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 29
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a0dada4e67fb7f30800000000000000
+      internalID: 4574521899599188136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b187a7018dbd98d4c810a8c28f621858
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Blood_0: 5684327315910396547
+      Blood_1: -1189345562256101844
+      Blood_10: 5335947261288081930
+      Blood_100: -6726169690815751196
+      Blood_101: -3462661655722590896
+      Blood_102: 6868607192312494980
+      Blood_103: -7968361196158750357
+      Blood_104: -4271622850041724855
+      Blood_105: -4025609000203314292
+      Blood_106: -6941005482259435784
+      Blood_107: 981792666379807688
+      Blood_108: -3280986500511828272
+      Blood_109: -6228247261688281068
+      Blood_11: -420561362150945321
+      Blood_110: -58561938586290087
+      Blood_111: 3482192131796855535
+      Blood_112: -6072752656282212377
+      Blood_113: -7398297958071003779
+      Blood_114: 3591196512350498225
+      Blood_115: -3943478455500093345
+      Blood_116: 5672170291218836496
+      Blood_117: 1127660041778184613
+      Blood_118: -3026155010770608835
+      Blood_119: 4574521899599188136
+      Blood_12: -7858715718292287355
+      Blood_120: 2348843342962230391
+      Blood_13: -1034289341275851498
+      Blood_14: 5052171841915474803
+      Blood_15: 746896397948701829
+      Blood_16: -7567482132543009634
+      Blood_17: -6743018210936478119
+      Blood_18: -3883518051959684106
+      Blood_19: 6553323263654280841
+      Blood_2: 5722333315871558701
+      Blood_20: -6577351968973786745
+      Blood_21: -897078715031351629
+      Blood_22: -4572818326935346543
+      Blood_23: 8041310347366581422
+      Blood_24: -6555394148765354152
+      Blood_25: 4201216384262297053
+      Blood_26: -1076412981617156026
+      Blood_27: 1013293048883887740
+      Blood_28: -656188230328449305
+      Blood_29: 3860720148897288421
+      Blood_3: 3909595645733894167
+      Blood_30: 889770481953779268
+      Blood_31: 4327907867643408495
+      Blood_32: -5470664636874853462
+      Blood_33: -7999300154375720742
+      Blood_34: 1426609218032138122
+      Blood_35: -1827875614463769959
+      Blood_36: 5596150657813055826
+      Blood_37: -568464005771191168
+      Blood_38: -4115894474923453527
+      Blood_39: 6271267269155110270
+      Blood_4: -374699494892873770
+      Blood_40: -3924809585859123549
+      Blood_41: 1702673457542605582
+      Blood_42: -981765383835898783
+      Blood_43: 8212015718710066394
+      Blood_44: -4809857469296149070
+      Blood_45: 3462105070884755277
+      Blood_46: 5078037396634909361
+      Blood_47: -772163090726090922
+      Blood_48: -321193792032334686
+      Blood_49: -2167140810385639814
+      Blood_5: 5281811327271454313
+      Blood_50: -80029556159743606
+      Blood_51: 2331608019378864654
+      Blood_52: -5259561233162126685
+      Blood_53: -6820232115612183221
+      Blood_54: 8909655363935596759
+      Blood_55: -7318225467781305882
+      Blood_56: 20909568435169969
+      Blood_57: 4332411185454022142
+      Blood_58: -1609774352881513653
+      Blood_59: -5667556957461652691
+      Blood_6: -2044344349260785571
+      Blood_60: -4934914382739049551
+      Blood_61: 5325196907503058520
+      Blood_62: -2232794813329106638
+      Blood_63: -1509670119697920382
+      Blood_64: 6678436843465845753
+      Blood_65: 2037108785276023403
+      Blood_66: 3458677813270018446
+      Blood_67: 3957876089737290820
+      Blood_68: -4541875297754390412
+      Blood_69: -4314122393434456151
+      Blood_7: 1295801174852132906
+      Blood_70: 7998522826580467790
+      Blood_71: -2068816831125406978
+      Blood_72: -8346301681240687987
+      Blood_73: 1883953573422385426
+      Blood_74: 5339812479750220954
+      Blood_75: 6181231025136116989
+      Blood_76: -2368124528928740980
+      Blood_77: 8882841890198208021
+      Blood_78: 8542541973833101217
+      Blood_79: -8066811729831973928
+      Blood_8: 1921429812043486609
+      Blood_80: -1888944180617358625
+      Blood_81: 137454048583772040
+      Blood_82: 8543978923001906203
+      Blood_83: 1693314250859650449
+      Blood_84: -7350080323659745552
+      Blood_85: -2291144762241598132
+      Blood_86: -2939213116379756715
+      Blood_87: 3324239943141268054
+      Blood_88: -5967654069106271380
+      Blood_89: -137246367196917357
+      Blood_9: 1383461657061368076
+      Blood_90: 3235961598847843593
+      Blood_91: 8663134481894248683
+      Blood_92: -1220574112620303622
+      Blood_93: -2449420595754798222
+      Blood_94: 4218821257842848249
+      Blood_95: -1196785074210956363
+      Blood_96: 5305186839175089963
+      Blood_97: -5050188559943958613
+      Blood_98: -6064959916295708616
+      Blood_99: 4848351727983842156
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

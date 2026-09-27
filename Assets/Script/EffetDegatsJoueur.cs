@@ -1,25 +1,23 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EffetDegatsJoueur : MonoBehaviour
 {
-    [Header("Robot")]
+    [Header("Player")]
     [SerializeField]
-    private SpriteRenderer renduRobot;
+    private SpriteRenderer renduPlayer;
 
     [Header("Interface")]
     [SerializeField]
-    private CanvasGroup flashEcran;
+    private CanvasGroup tachesDeSang; 
 
     [Header("Animation")]
     [SerializeField]
     private Color couleurDegat = Color.red;
 
     [SerializeField, Min(0.1f)]
-    private float dureeEffet = 0.45f;
-
-    [SerializeField, Min(1)]
-    private int nombreClignotements = 3;
+    private float dureeDisparitionSang = 2.0f; // Le temps (en secondes) que met le sang à disparaître
 
     [SerializeField, Min(1f)]
     private float agrandissement = 1.12f;
@@ -30,21 +28,22 @@ public class EffetDegatsJoueur : MonoBehaviour
 
     private void Awake()
     {
-        if (renduRobot == null)
+        if (renduPlayer == null)
         {
-            renduRobot = GetComponent<SpriteRenderer>();
+            renduPlayer = GetComponent<SpriteRenderer>();
         }
 
-        if (renduRobot != null)
+        if (renduPlayer != null)
         {
-            couleurInitiale = renduRobot.color;
+            couleurInitiale = renduPlayer.color;
         }
 
         echelleInitiale = transform.localScale;
 
-        if (flashEcran != null)
+        if (tachesDeSang != null)
         {
-            flashEcran.alpha = 0f;
+            tachesDeSang.GameObject().SetActive(true); // Activation du sang puisque désactiver pour ne pas gênée l'édition
+            tachesDeSang.alpha = 0f; // Le sang est invisible au démarrage
         }
     }
 
@@ -55,70 +54,51 @@ public class EffetDegatsJoueur : MonoBehaviour
             StopCoroutine(effetEnCours);
         }
 
-        effetEnCours = StartCoroutine(JouerEffetDegats());
+        effetEnCours = StartCoroutine(JouerEffetSang());
     }
 
-    private IEnumerator JouerEffetDegats()
+    private IEnumerator JouerEffetSang()
     {
-        float dureeEtape =
-            dureeEffet / (nombreClignotements * 2f);
+        // 1. IMPACT : Le joueur grossit, rougit, et le sang apparaît à l'écran
+        transform.localScale = echelleInitiale * agrandissement;
+        if (renduPlayer != null) renduPlayer.color = couleurDegat;
+        
+        if (tachesDeSang != null) tachesDeSang.alpha = 1f; // Opacité à 100%
 
-        transform.localScale =
-            echelleInitiale * agrandissement;
+        // Petit temps d'arrêt pour marquer l'impact sur le joueur (ex: 0.15 seconde)
+        yield return new WaitForSeconds(0.15f);
 
-        for (int i = 0; i < nombreClignotements; i++)
-        {
-            if (renduRobot != null)
-            {
-                renduRobot.color = couleurDegat;
-            }
-
-            if (flashEcran != null)
-            {
-                flashEcran.alpha = 0.55f;
-            }
-
-            yield return new WaitForSeconds(dureeEtape);
-
-            if (renduRobot != null)
-            {
-                renduRobot.color = couleurInitiale;
-            }
-
-            if (flashEcran != null)
-            {
-                flashEcran.alpha = 0f;
-            }
-
-            yield return new WaitForSeconds(dureeEtape);
-        }
-
-        if (renduRobot != null)
-        {
-            renduRobot.color = couleurInitiale;
-        }
-
-        if (flashEcran != null)
-        {
-            flashEcran.alpha = 0f;
-        }
-
+        // Le joueur reprend sa couleur et sa taille normale
+        if (renduPlayer != null) renduPlayer.color = couleurInitiale;
         transform.localScale = echelleInitiale;
+
+        // 2. FONDU : Le sang disparaît progressivement
+        if (tachesDeSang != null)
+        {
+            float tempsEcoule = 0f;
+            
+            // On fait une boucle qui tourne tant que le temps écoulé est inférieur à la durée voulue
+            while (tempsEcoule < dureeDisparitionSang)
+            {
+                tempsEcoule += Time.deltaTime; // Ajoute le temps passé depuis la dernière frame
+                
+                // Mathf.Lerp calcule une valeur fluide entre 1 (départ) et 0 (fin) en fonction du temps
+                tachesDeSang.alpha = Mathf.Lerp(1f, 0f, tempsEcoule / dureeDisparitionSang);
+                
+                yield return null; // Attend la frame suivante avant de continuer la boucle
+            }
+
+            // Par sécurité, on s'assure qu'à la fin de la boucle, l'opacité est bien exactement à zéro
+            tachesDeSang.alpha = 0f;
+        }
+
         effetEnCours = null;
     }
 
     private void OnDisable()
     {
-        if (renduRobot != null)
-        {
-            renduRobot.color = couleurInitiale;
-        }
-
-        if (flashEcran != null)
-        {
-            flashEcran.alpha = 0f;
-        }
-
+        if (renduPlayer != null) renduPlayer.color = couleurInitiale;
+        if (tachesDeSang != null) tachesDeSang.alpha = 0f;
         transform.localScale = echelleInitiale;
     }
 }
