@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class GameManager : MonoBehaviour
     public bool haveKey = false;
     [SerializeField]
     private GameObject porte;
+    [SerializeField]
+    private GameObject gameOverPanel;
 
     void Update()
     {
@@ -16,7 +19,13 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        gameOverPanel.SetActive(true);
         Time.timeScale = 0f;
     }
 
+    public void Restart()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(0);
+    }
 }

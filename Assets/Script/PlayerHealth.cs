@@ -24,28 +24,30 @@ public class PlayerHealth : MonoBehaviour
     
     public void TakeDamage(int degatsAmount)
     {
-        if(currentHealth == 0) return;
+        if(currentHealth <= 0) return;
 
         currentHealth -= degatsAmount;
 
-        if(currentHealth < 0) currentHealth = 0;
-
-        Debug.Log("Aïe ! Le joueur perd " + degatsAmount + " PV. Reste : " + currentHealth);
-
-        if(animator != null) animator.SetTrigger("TakeDamage");
-        if (degatPlayerScript != null) degatPlayerScript.DeclencherEffet();
-
-        UpdateSlider();
-
         if(currentHealth <= 0)
         {
+            currentHealth = 0;
+            UpdateSlider();
             Die();
+        } else
+        {
+            Debug.Log("Aïe ! Le joueur perd " + degatsAmount + " PV. Reste : " + currentHealth);
+
+            if(animator != null) animator.SetTrigger("TakeDamage");
+            if (degatPlayerScript != null) degatPlayerScript.DeclencherEffet();
+
+            UpdateSlider();
         }
     }
 
     void Die()
     {
         GetComponent<MovePlayer>().DesactiverCommandes();
+        GetComponent<PlayerAttack>().enabled = false;
 
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         if (rb != null)
