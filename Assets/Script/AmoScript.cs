@@ -36,9 +36,9 @@ public class AmoScript : MonoBehaviour
             Destroy(gameObject);
         }
 
-        // if (collision.CompareTag("Ground"))
-        // {
-        //     Destroy(gameObject);
-        // }
+        if (collision.CompareTag("Wall"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

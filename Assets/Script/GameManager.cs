@@ -6,6 +6,13 @@ public class GameManager : MonoBehaviour
     public bool haveCarKey = false;
     public bool haveGaz = false;
     public bool haveKey = false;
+    [SerializeField]
+    private GameObject porte;
+
+    void Update()
+    {
+        if(haveKey) porte.SetActive(true);
+    }
 
     public void GameOver()
     {
