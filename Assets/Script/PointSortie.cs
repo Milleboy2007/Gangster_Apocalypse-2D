@@ -9,6 +9,8 @@ public class PointSortie : MonoBehaviour
     private string nameOtherScene;
     [SerializeField]
     private GameObject message;
+    [SerializeField]
+    private GameObject vic;
     private bool isPlayerClose;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -39,6 +41,12 @@ public class PointSortie : MonoBehaviour
                 message.GetComponent<TextMeshProUGUI>().text = "Tap E to switch level";
                 message.SetActive(true);
             }
+        }
+
+        if (other.CompareTag("Car"))
+        {
+            Time.timeScale = 0f;
+            vic.SetActive(true);
         }
     }
 

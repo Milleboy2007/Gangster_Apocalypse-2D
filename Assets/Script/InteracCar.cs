@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-public class VoitureInteraction : MonoBehaviour
+public class InteracCar : MonoBehaviour
 {
     [Header("Ref Car")]
     [SerializeField] private MonoBehaviour driveScript;
@@ -24,7 +24,7 @@ public class VoitureInteraction : MonoBehaviour
     private Rigidbody2D playerRB;
 
     private bool isPlayerClose = false;
-    private bool isInCar = false;
+    public bool isInCar = false;
 
     void Awake()
     {
@@ -45,7 +45,10 @@ public class VoitureInteraction : MonoBehaviour
             if (isInCar) ExiteCar();
             else if (isPlayerClose) {
                 if(gameManager != null && gameManager.haveCarKey && gameManager.haveGaz) EnterCar();
-                else Debug.Log("Il manque un objet pour utiliser la voiture");
+                else {
+                    Debug.Log("Il manque un objet pour utiliser la voiture");
+                    message.GetComponent<TextMeshProUGUI>().text = "Il manque un objet pour utiliser la voiturer";
+                }
             }
         }
 

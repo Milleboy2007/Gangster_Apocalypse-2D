@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3228866400282204269}
   m_Layer: 0
   m_Name: Car
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   accel: 30
   rotaSpeed: 130
-  maxSpeed: 15
+  maxSpeed: 10
   adherence: 0.9
 --- !u!114 &8642790923168573895
 MonoBehaviour:
@@ -157,6 +157,7 @@ MonoBehaviour:
   movePlayerScript: {fileID: 0}
   playerVisual: {fileID: 0}
   message: {fileID: 0}
+  isInCar: 0
 --- !u!61 &5882737004984604543
 BoxCollider2D:
   m_ObjectHideFlags: 0
