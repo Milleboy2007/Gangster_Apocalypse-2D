@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
     [Header("Quest Object")]
     public bool haveCarKey = false;
     public bool haveGaz = false;
+    public bool haveKey = false;
 
     public void GameOver()
     {

@@ -79,6 +79,13 @@ public class EnnemiHealth : MonoBehaviour
         GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
         GetComponent<EnnemiMobile>().enabled = false;
         GetComponent<Collider2D>().enabled = false;
+
+        Invoke("CleanUp", 10f);
+    }
+
+    void CleanUp()
+    {
+        Destroy(gameObject);
     }
 
     void UpdateSlider()

@@ -69,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,10 +123,10 @@ TextureImporter:
         serializedVersion: 2
         x: 40
         y: 0
-        width: 35
+        width: 37
         height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -140,37 +140,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt_1
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 25
-        width: 10
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3476ad19262dfc600800000000000000
-      internalID: 490842205202310979
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Hurt_2
       rect:
         serializedVersion: 2
         x: 168
         y: 0
-        width: 43
+        width: 44
         height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -184,28 +162,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hurt_3
-      rect:
-        serializedVersion: 2
-        x: 204
-        y: 35
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ff88d2f14d9b86e40800000000000000
-      internalID: 5649970053243570431
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Hurt_4
       rect:
         serializedVersion: 2
@@ -213,8 +169,8 @@ TextureImporter:
         y: 0
         width: 46
         height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -235,8 +191,8 @@ TextureImporter:
         y: 0
         width: 49
         height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -249,33 +205,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Hurt_6
-      rect:
-        serializedVersion: 2
-        x: 337
-        y: 19
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 90655a715c8c91e60800000000000000
-      internalID: 7933592967420663305
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 94ae7346f550cc34a8903cf9c2f84be1
     internalID: 0
     vertices: []
     indices: 
