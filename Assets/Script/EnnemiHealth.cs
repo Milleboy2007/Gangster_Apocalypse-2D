@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -74,6 +75,10 @@ public class EnnemiHealth : MonoBehaviour
         animator.SetTrigger("Die");
 
         if(backroundLife != null) backroundLife.SetActive(false);
+
+        GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+        GetComponent<EnnemiMobile>().enabled = false;
+        GetComponent<Collider2D>().enabled = false;
     }
 
     void UpdateSlider()
