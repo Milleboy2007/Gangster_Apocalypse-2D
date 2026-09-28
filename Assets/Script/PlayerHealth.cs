@@ -69,4 +69,15 @@ public class PlayerHealth : MonoBehaviour
             healthBar.fillAmount = (float)currentHealth / maxHealth;
         }
     }
+
+        public bool GetStateHealth()
+    {
+        return currentHealth < maxHealth && currentHealth > 0;
+    }
+
+    public void AddHealth(int amount) {
+        currentHealth += amount;
+        if (currentHealth > maxHealth) currentHealth = maxHealth;
+        UpdateSlider();
+    }
 }

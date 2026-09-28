@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class CollectableMunitions : MonoBehaviour
 {
-    public int quantiteDonnee = 5;
+    [SerializeField]
+    private int quantiteDonnee = 5;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
