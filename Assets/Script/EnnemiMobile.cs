@@ -71,6 +71,8 @@ public class EnnemiMobile : MonoBehaviour
     [Header("Correctif")]
     [SerializeField] 
     private Vector2 rangeGap = new Vector2(0f, 0.5f);
+    [SerializeField]
+    private Vector2 playerDetecGap = new Vector2(0f, 0.5f);
 
     // Références aux composants de l'ennemi.
     private Rigidbody2D corps;
@@ -116,7 +118,10 @@ public class EnnemiMobile : MonoBehaviour
     private void FixedUpdate()
     {
         Vector2 centreEnnemi = corps.position + rangeGap;
+        Vector2 centrePlayer = joueur != null ? (Vector2)joueur.position + playerDetecGap : Vector2.zero;
+
         bool joueurDetecte = joueur != null && Vector2.Distance(corps.position, joueur.position) <= rayonDetection;
+
 
         // Si le joueur vient tout juste d'échapper à la détection (il était là, mais ne l'est plus)
         if (!joueurDetecte && joueurPrecedemmentDetecte)
@@ -135,7 +140,7 @@ public class EnnemiMobile : MonoBehaviour
         {
             if (joueurDetecte)
             {
-                float distanceWithPlayer = Vector2.Distance(centreEnnemi, joueur.position);
+                float distanceWithPlayer = Vector2.Distance(centreEnnemi, centrePlayer);
 
                 if(distanceWithPlayer <= attackRange)
                 {
@@ -243,6 +248,8 @@ public class EnnemiMobile : MonoBehaviour
     // Appelée pendant que l'autre Collider2D reste dans la zone Trigger.
     private void AttackPlayer()
     {
+        Vector2 centreEnnemi = (Vector2)corps.position + rangeGap;
+        Vector2 centreJoueur = (Vector2)joueur.position + playerDetecGap;
         // Ignore si :
         // - le délai entre deux dégâts n'est pas encore écoulé.
         if (Time.time < prochainDegat) return;
@@ -253,7 +260,7 @@ public class EnnemiMobile : MonoBehaviour
         // Lance l'effet visuel de l'ennemi si la référence n'est pas null.
         if(animator != null) animator.SetTrigger("Attack");
 
-        Vector2 direction = ((Vector2)joueur.position - corps.position).normalized;
+        Vector2 direction = (centreJoueur - centreEnnemi).normalized;
         if (Mathf.Abs(direction.x) > 0.05f)
             rendu.flipX = direction.x < 0f;
 

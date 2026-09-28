@@ -32,7 +32,8 @@ public class PlayerHealth : MonoBehaviour
 
         Debug.Log("Aïe ! Le joueur perd " + degatsAmount + " PV. Reste : " + currentHealth);
 
-        if (animator != null) degatPlayerScript.DeclencherEffet();
+        if(animator != null) animator.SetTrigger("TakeDamage");
+        if (degatPlayerScript != null) degatPlayerScript.DeclencherEffet();
 
         UpdateSlider();
 
