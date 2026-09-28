@@ -30,6 +30,7 @@ public class CarItem : MonoBehaviour
                     Debug.Log("Key récupérée!");
                 }
 
+                AudioJeu.instance.JouerCollect();
                 Destroy(gameObject);
             }
         }

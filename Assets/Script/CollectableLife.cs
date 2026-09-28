@@ -16,6 +16,7 @@ public class CollectableLife : MonoBehaviour
                 if (scriptHealth.GetStateHealth())
                 {
                     scriptHealth.AddHealth(healtAmount);
+                    AudioJeu.instance.JouerCollect();
                     Destroy(gameObject);
                 }
                 else

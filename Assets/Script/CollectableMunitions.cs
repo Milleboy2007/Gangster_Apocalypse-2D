@@ -16,6 +16,7 @@ public class CollectableMunitions : MonoBehaviour
                 if (scriptAttaque.GetStateMunition())
                 {
                     scriptAttaque.AddMunition(quantiteDonnee);
+                    AudioJeu.instance.JouerCollect();
                     Destroy(gameObject);
                 }
                 else Debug.Log("Munition maximume atteind");

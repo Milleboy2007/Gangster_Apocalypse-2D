@@ -72,6 +72,7 @@ public class PlayerAttack : MonoBehaviour
         currentMunitions--;
         UpdateMunitionText();
 
+        AudioJeu.instance.JouerTir();
         if (animator != null) animator.SetTrigger("Shoot");
 
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -96,6 +97,7 @@ public class PlayerAttack : MonoBehaviour
     {
         timeNextHit = Time.time + meleeRate;
 
+        AudioJeu.instance.JouerFrappe();
         if (animator != null) animator.SetTrigger("Melee");
 
         Collider2D[] objetsTouches = Physics2D.OverlapCircleAll(meleePoint.position, attackRange);

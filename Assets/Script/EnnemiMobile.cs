@@ -257,6 +257,7 @@ public class EnnemiMobile : MonoBehaviour
         // Programme le prochain instant où les dégâts seront autorisés.
         prochainDegat = Time.time + delaiEntreDegats;
 
+        GetComponent<AudioSource>().Play();
         // Lance l'effet visuel de l'ennemi si la référence n'est pas null.
         if(animator != null) animator.SetTrigger("Attack");
 
